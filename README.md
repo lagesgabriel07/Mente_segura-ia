@@ -48,13 +48,25 @@ pip install -r requirements.txt
 
 4️⃣ Configurar Variáveis de Ambiente
 
-Crie um arquivo .env dentro das pastas bot/ e api/ com as seguintes informações:
+Crie um arquivo .env dentro das pastas bot/  com as seguintes informações:
 
-BOT_TOKEN=seu_token_do_telegram IA_API_URL=http://127.0.0.1:5000/api/chatbot DB_HOST=localhost DB_NAME=mente_segura DB_USER=usuario DB_PASSWORD=senha
+BOT_TOKEN= 7985444742:AAGXA2ogjtONuaQWt5j7tqmhUHSLM9AANxA
+DB_HOST=pgsql27-farm1.kinghost.net
+DB_NAME=servidorprivadoigor
+DB_USER=servidorprivadoigor
+DB_PASSWORD=igor2020
+
+
+OPENAI_API_KEY=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
+
+IA_API_URL=http://localhost:5000/apidocs/
+
+
+WHISPER_API_URL=https://api.openai.com/v1/audio/transcriptions 
 
 5️⃣ Executar a API
 
-python api/api.py
+python -m api.app
 
 A API estará disponível em: http://127.0.0.1:5000/apidocs
 
@@ -64,7 +76,7 @@ python bot/main.py
 
 7️⃣ Processar os PDFs e Indexar os Embeddings
 
-python IA_mentesegura/main.py
+python IA/main.py
 
 📌 Como Funciona?
 
